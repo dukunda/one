@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-consulting-white-version</title>
+    <style>
+        body.white-version{
+            background-color: #ECF0F3;
+            width: 100%;
+            height: 630px;
+        }
+        .inbio{
+            width: 20%;
+            height: 640px;
+            position: fixed;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            overflow-y: scroll;
+        }
+        .pic{
+            width: 170px;
+            height: 170px;
+            border: 5px solid rgb(255, 255, 255);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            border-radius: 100%;
+        }
+        .pic1{
+            width: 170px;
+            height: 170px;
+            border-radius: 100%;
+        }
+        .infos{
+            width: 75%;
+            height: 625px;
+            padding:30px;
+            float: right;
+            margin-top:0px;
+        }
+        #pic2{
+            width: 300px;
+            height: 300px;
+            border: 8px solid rgb(247, 63, 176);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+            border-radius: 100%;
+        }
+        .pic3{
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+        }
+        .comm{
+            height: 100px;
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .head1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 60px;
+            font-weight: bold;
+        }
+        .pco{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            padding: 10px;
+            margin-left: 100px;
+            margin-top: -30px;
+        }
+        .but{
+            width: 180px;
+            height: 60px;
+            border: none;
+            background: linear-gradient(rgb(192, 192, 192), rgb(255,255,255));
+            border-radius: 10px;
+            margin-left: 440px;
+            margin-top: 90px;
+            color: rgb(247, 63, 176);
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .but:hover{
+            background: rgb(247, 63, 176);
+            color: white;
+            margin-top: 87px;
+        }
+        #hr1{
+            margin-top: 70px;
+        }
+        .red{
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(247, 63, 176);
+            margin-left: 475px;
+            margin-top: 70px;
+        }
+        .h11{
+            margin-left: 320px;
+            font-size: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        #feat{
+            width: 100%;
+            height: 350px;
+            padding: 10px;
+        }
+        .features{
+            width: 320px;
+            height: 350px;
+            background: linear-gradient(rgb(192, 192, 192), rgb(255,255,255));
+            border-radius: 10px;
+            border: none;
+            transition: 0.7s;
+            cursor: pointer;
+        }
+        .features:hover{
+            background: rgb(247, 63, 176);
+            color: white;
+        }
+        .features1{
+            width: 320px;
+            height: 350px;
+            background: linear-gradient(rgb(192, 192, 192), rgb(255,255,255));
+            border-radius: 10px;
+            border: none;
+            margin-left: 350px;
+            margin-top: -350PX;
+            transition: 0.7s;
+            cursor: pointer;
+        }
+        .features1:hover{
+            background: rgb(247, 63, 176);
+            color: white;
+        }
+        .features2{
+            width: 320px;
+            height: 350px;
+            background: linear-gradient(rgb(192, 192, 192), rgb(255,255,255));
+            border-radius: 10px;
+            border: none;
+            margin-left: 700px;
+            margin-top: -350PX;
+            transition: 0.7s;
+            cursor: pointer;
+        }
+        .features2:hover{
+            background: rgb(247, 63, 176);
+            color: white;
+        }
+        .red1{
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(247, 63, 176);
+            margin-left: 320px;
+            margin-top: 70px;
+        }
+        #portf{
+            width: 100%;
+            height:730px;
+            padding: 30px;
+        }
+        .features3{
+            width: 320px;
+            height: 350px;
+            background: linear-gradient(rgb(192, 192, 192), rgb(255,255,255));
+            border-radius: 10px;
+            margin-left: 350px;
+            margin-top: -350px;
+        }
+        .features4{
+            width: 320px;
+            height: 350px;
+            background: linear-gradient(rgb(192, 192, 192), rgb(255,255,255));
+            border-radius: 10px;
+            margin-left: 700px;
+            margin-top: -350px;
+        }
+        .features5{
+            width: 320px;
+            height: 350px;
+            background: linear-gradient(rgb(192, 192, 192), rgb(255,255,255));
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        .features6{
+            width: 320px;
+            height: 350px;
+            background: linear-gradient(rgb(192, 192, 192), rgb(255,255,255));
+            border-radius: 10px;
+            margin-top: -350px;
+            margin-left: 350px;
+        }
+        .features7{
+            width: 320px;
+            height: 350px;
+            background: linear-gradient(rgb(192, 192, 192), rgb(255,255,255));
+            border-radius: 10px;
+            margin-top: -350px;
+            margin-left: 700px;
+        }
+        .pic101{
+            padding: 20px;
+            border-radius: 20px;
+            transition: 1s;
+            cursor: pointer;
+        }
+        .pic101:hover{
+            scale: 1.1;
+        }
+        .red2{
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(247, 63, 176);
+            padding: 20px;
+            margin-top: -20px;
+        }
+        .black{
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: regular;
+            text-decoration: none;
+            color: black;
+            padding: 20px;
+            transition: 1s;
+            margin-top: -20px;
+        }
+        .black:hover{
+            color: white;
+        }
+        #educ{
+            width: 800px;
+            height: 70px;
+            background: linear-gradient(rgb(192, 192, 192), rgb(255,255,255));
+            border-radius: 10px;
+        }
+        .educat{
+            border: none;
+            width: 200px;
+            height: 70px;
+            background: linear-gradient(rgb(255, 255, 255), rgb(192, 192, 192));
+            color: rgb(247, 63, 176);
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .black1{
+            border: none;
+            width: 200px;
+            height: 70px;  
+            border-radius: 10px;
+            background: transparent;
+            font-size: 20px;
+            font-weight: bold;
+            float: right;
+            transition: 0.s;
+            cursor: pointer;
+        }
+        .black1:hover{
+            color: rgb(247, 63, 176);
+            background: linear-gradient(rgb(255, 255, 255),rgb(192, 192, 192));
+            border-radius: 10px;
+        }
+        #red3{
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(247, 63, 176);
+            margin-top: 70px;
+        }
+        #h111{
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px
+        }
+        .qual{
+            width: 480px;
+            height: 350px;
+            background: linear-gradient(rgb(192, 192, 192),rgb(255,255,255));
+            border-radius: 10px;
+            padding-top:15px;
+            transition:0.5s;
+        }
+        .qual1{
+            width: 480px;
+            height: 350px;
+            margin-left: 540px;
+            margin-top: -360px;
+            background: linear-gradient(rgb(192, 192, 192),rgb(255,255,255));
+            border-radius: 10px;
+            padding-top:15px;
+            transition:0.5s;
+        }
+        .qual2{
+            width: 480px;
+            height: 350px;
+            margin-top: 30px;
+            background: linear-gradient(rgb(192, 192, 192),rgb(255,255,255));
+            border-radius: 10px;
+            padding-top:15px;
+            transition:0.5s;
+        }
+        .qual3{
+            width: 480px;
+            height: 350px;
+            margin-left: 540px;
+            margin-top: -360px;
+            background: linear-gradient(rgb(192, 192, 192),rgb(255,255,255));
+            border-radius: 10px;
+            padding-top:15px;
+            transition:0.5s;
+        }
+        .qual4{
+            width: 480px;
+            height: 350px;
+            margin-top: 30px;
+            background: linear-gradient(rgb(192, 192, 192),rgb(255,255,255));
+            border-radius: 10px;
+            padding-top:15px;
+            transition:0.5s;
+        }
+        .qual5{
+            width: 480px;
+            height: 350px;
+            margin-left: 540px;
+            margin-top: -360px;
+            background: linear-gradient(rgb(192, 192, 192),rgb(255,255,255));
+            border-radius: 10px;
+            padding-top:15px;
+            transition:0.5s;
+        }
+        .quali{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        .quali0{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 30px; 
+            margin-left: 30px;
+        }
+        .short{
+            width: 80px;
+            height:30px;
+            background: white;;
+            border-radius: 5px;
+            float: right;
+            margin-right: 40px;
+            margin-top:-30px;
+        }
+        .ptit{
+            margin-left: 20px;
+            font-family: sans-serif;
+            font-size: 13px;
+        }
+        .para{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: regular;
+            margin-left: 30px;
+            text-align: center;
+        }
+        .qual:hover{
+            background: rgb(247, 63, 176);
+            color: white;
+
+        }
+        .qual1:hover{
+            background: rgb(247, 63, 176);
+            color: white;
+
+        }
+        .qual2:hover{
+            background: rgb(247, 63, 176);
+            color: white;
+
+        }
+        .qual3:hover{
+            background: rgb(247, 63, 176);
+            color: white;
+
+        }
+        .qual4:hover{
+            background: rgb(247, 63, 176);
+            color: white;
+
+        }
+        .qual5:hover{
+            background: rgb(247, 63, 176);
+            color: white;
+        }
+        .h15{
+            margin-left: 10px;
+            font-size: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .java{
+            width: 300px;
+            height: 480px;
+            background: linear-gradient(rgb(192, 192, 192), rgb(255, 255, 255));
+            border-radius: 10px;
+        }
+        .jav{
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            width: 300px;
+            height: 80px;
+            background: transparent;
+            cursor: pointer;
+            transition: 1s;
+        }
+        .jav:hover{
+            background: linear-gradient(rgb(192, 192, 192), rgb(255, 255, 255));
+            color: rgb(247, 63, 176);
+        }
+        .jav::after{
+            background: linear-gradient(rgb(192, 192, 192), rgb(255, 255, 255));
+            color: rgb(247, 63, 176);
+        }
+        #web{
+            width: 700px;
+            height: 700px;
+            float: right;
+            margin-top: -480px;
+        }
+        .wierdo{
+            width: 180px;
+            height: 180px;
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin-left: 20px;
+        }
+        .wierdo1{
+            width: 180px;
+            height: 180px;
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin-left: 220px;
+            margin-top:-180px;
+        }
+        .wierdo2{
+            width: 180px;
+            height: 180px;
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin-left: 420px;
+            margin-top:-180px;
+        }
+        .wierdo3{
+            width: 180px;
+            height: 180px;
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin-left: 20px;
+            margin-top:20px;
+        }
+        .wierdo4{
+            width: 180px;
+            height: 180px;
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin-left: 220px;
+            margin-top:-180px;
+        }
+        .wierdo5{
+            width: 180px;
+            height: 180px;
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin-left: 420px;
+            margin-top:-180px;
+        }
+        .wierdo6{
+            width: 180px;
+            height: 180px;
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin-left: 20px;
+            margin-top:20px;
+        }
+        .wierdo7{
+            width: 180px;
+            height: 180px;
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin-left: 220px;
+            margin-top:-180px;
+        }
+        .wierdo8{
+            width: 180px;
+            height: 180px;
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin-left: 420px;
+            margin-top:-180px;
+        }
+        .wierdo9{
+            width: 180px;
+            height: 180px;
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin-left: 20px;
+            margin-top:20px;
+        }
+        .wierdo10{
+            width: 180px;
+            height: 180px;
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin-left: 220px;
+            margin-top:-180px;
+        }
+        .wierdo11{
+            width: 180px;
+            height: 180px;
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin-left: 420px;
+            margin-top:-180px;
+        }
+        .jvs{
+            width: 180px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            height: 130px;
+        }
+        .a101{
+            margin-top: 0px;
+        }
+        .block{
+            text-align: center;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #froz{
+            margin-top: 370px;
+        }
+        #price{
+            width: 100%;
+            height: 800px;
+            margin-top: 0px;
+        }
+        .pric{
+            width: 30%;
+            height: 160px;
+            margin-top: 50px;
+            position: relative;
+        }
+        .recom{
+            width: 800px;
+            height: 700px;
+            float: right;
+            margin-top: -160px;
+            background: linear-gradient(rgb(255, 255, 255), rgb(192, 192, 192));
+        }
+        .stat{
+            width: 100%;
+            height: 80px;
+            border-radius: 10px;
+            background: linear-gradient(rgb(192, 192, 192), rgb(255, 255, 255));
+        }
+        .jav2{
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            width: 235px;
+            height: 80px;
+            background: transparent;
+            cursor: pointer;
+            transition: 2s;
+        }
+        .jav2:hover{
+            background: linear-gradient(rgb(255, 255, 255), rgb(192, 192, 192));
+            color: rgb(247, 63, 176);
+        }
+        .num{
+            float: right;
+            background: linear-gradient(rgb(255, 255, 255), rgb(192, 192, 192));
+            width: 120px;
+            height: 60px;
+            border-radius: 10px;
+            border: none;
+            margin-right: 130px;
+            margin-top: -60px;
+            color: rgb(247, 63, 176);
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .prof{
+            width: 400px;
+            height: 800px;
+            background: linear-gradient(rgb(192, 192, 192), rgb(255, 255, 255));
+            border-radius: 10px;
+        }
+        .ident{
+            width: 500px;
+            height: 800px;
+            background: linear-gradient(rgb(192, 192, 192), rgb(255, 255, 255));
+            border-radius: 10px;
+            margin-left: 450px;
+            margin-top: -800px;
+            padding-top: 20px;
+        }
+        .proff{
+            margin-left: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            transition: 0.7s;
+        }
+        .proff:hover{
+            scale: 1.05;
+        }
+        .pho{
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+        .tel{
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        .tel:hover{
+            color: red;
+        }
+        form{
+            margin-left: 20px;
+        }
+        .last{
+            width: 450px;
+            height: 80px;
+            border-radius: 5px;
+            border:none;
+            margin-top: 30px;
+            background: linear-gradient(rgb(255, 255, 255), rgb(192, 192, 192));
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        .last:hover{
+            background: rgb(247, 63, 176);
+            margin-top: 27px;
+            color: white;
+        }
+        .dern{
+            margin-top: 120px;
+            margin-left: 450px;
+            width: 70px;
+            height: 70px;
+            border: 3px solid grey;
+            border-radius: 100%;
+        }
+        .hom{
+            width: 25px;
+            height: 25px;
+            margin-bottom: -5px;
+        }
+        nav ul li{
+            list-style-type:none;
+            margin-top: 20px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            margin-left: 10px;
+            color: rgb(56, 56, 56);
+        }
+        #he11{
+            margin-left: 320px;
+            font-size: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        #withm{
+            font-size: 60px; 
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 250px;
+        }
+        .features3:hover{
+            background: rgb(247, 63, 176);
+            color: white;
+        }
+        .features4:hover{
+            background: rgb(247, 63, 176);
+            color: white;
+        }
+        .features5:hover{
+            background: rgb(247, 63, 176);
+            color: white;
+        }
+        .features6:hover{
+            background: rgb(247, 63, 176);
+            color: white;
+        }
+        .features7:hover{
+            background: rgb(247, 63, 176);
+            color: white;
+        }
+        .links{
+            margin-left: 60px; 
+            margin-top:20px;
+        }
+        .lin{
+            width: 30px;
+            height:30px;
+        }
+        .face{
+            width: 35px;
+            height: 35px;
+            background: linear-gradient(rgb(255,255,255), rgb(192,192,192));
+        }
+        .face1{
+            width: 35px;
+            height: 35px;
+            background: linear-gradient(rgb(255,255,255), rgb(192,192,192));
+            margin-left: 45px;
+            margin-top: -35px;
+        }
+        .face2{
+            width: 35px;
+            height: 35px;
+            background: linear-gradient(rgb(255,255,255), rgb(192,192,192));
+            margin-left: 90px;
+            margin-top: -35px;
+        }
+        .featu{
+            width:80px;
+            height:80px;
+            margin-left: 50px;
+            margin-top: 100px;
+        }
+        .good{
+            width:15px;
+            height:15px;
+        }
+        .order{
+            width: 500px;
+            height: 50px;
+            border-radius: 5px;
+            margin-top: 50px;
+            margin-left: 50px;
+            background: linear-gradient(rgb(192, 192, 192), rgb(255, 255, 255));
+            border: none;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        .order:hover{
+            background: rgb(247, 63, 176);
+            color: white;
+            margin-top: 47px;
+        }
+        .tim{
+            width:20px;
+            height: 20px;
+            margin-bottom: -5px;
+        }
+        #hr2{
+            margin-top: 70px;
+        }
+        #hr3{
+            margin-top: 70px;
+        }
+        #hr4{
+            margin-top: 70px;
+        }
+        #hr6{
+            margin-top: 70px;
+        }
+        #hr7{
+            margin-top: 70px;
+        }
+    </style>
+</head>
+<body class="white-version">
+    <div class="inbio">
+        <div class="pic">
+            <img class="pic1" src="kevin1.webp" alt="my picture">
+        </div>
+        <nav>
+            <ul>
+                <li><img src="png/512/ios7-home-outline.png" alt="" class="hom"><a href="#pic2">HOME</a></li>
+                <li><img src="png/512/ios7-briefcase-outline.png" alt="" class="hom"><a href="#hr1">FEATURES</a></li>
+                <li><img src="png/512/social-buffer-outline.png" alt="" class="hom"><a href="#hr2">PORTFOLIO</a></li>
+                <li><img src="png/512/ios7-people-outline.png" alt="" class="hom"><a href="#hr3">RESUME</a></li>
+                <li><img src="png/512/ios7-person-outline.png" alt="" class="hom"><a href="#hr4">CLIENTS</a></li>
+                <li><img src="png/512/ios7-cart-outline.png" alt="" class="hom"><a href="#froz">PRICING</a></li>
+                <li><img src="png/512/android-image.png" alt="" class="hom"><a href="#hr6">BLOG</a></li>
+                <li><img src="png/512/ios7-chatbubble-outline.png" alt="" class="hom"><a href="#hr7">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="find">
+            <p style="font-size: 15px; margin-left: 60px; margin-top:60px;font-family: Arial, Helvetica, sans-serif;">FIND WITH ME</p>
+            <div class="links">
+                <a href="https://www.facebook.com/">
+                    <div class="face">
+                        <img class="lin" src="png/512/social-facebook-outline.png" alt="">
+                    </div>
+                </a><a href="https://www.instagram.com/i_k.e.v.i.n_/">
+                    <div class="face1">
+                        <img class="lin" src="png/512/social-instagram-outline.png" alt="">
+                    </div>
+                </a><a href="#">
+                    <div class="face2">
+                        <img class="lin" src="png/512/social-linkedin-outline.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="infos">
+        <div id="pic2" id="home">
+            <img class="pic3" src="kevin2.jpg" alt="another picture">
+        </div>
+        <div class="comm">
+            <h1 class="head1">Iradukunda Kevin</h1>
+            <p class="pco">I am <span style="color: rgb(247, 63, 176);">Developer</span></p>
+        </div>
+            <a href="#withm"><button class="but">CONTACT ME</button></a>
+        <hr id="hr1">
+        <p class="red">FEATURES</p>
+        <h1 class="h11">WHAT I DO</h1>
+        <div id="feat">
+            <a style="text-decoration: none;color: black;" href="#pic2">
+            <div class="features">
+                <img src="png/512/navicon.png" alt="" class="featu">
+                <h1 style="padding-top:20px;font-family: Arial, Helvetica, sans-serif;font-size: 20px;margin-left: 50px;font-weight: lighter;">Bussiness Strategy</h1>
+                <p style="font-size: 17px;font-family: Arial, Helvetica, sans-serif;font-weight: regular;margin-left: 30px;">I throw myself down among the<br>tall grass by the stream as I lie<br> close to the earth </p>
+            </div>
+            </a>
+            <a style="text-decoration: none;color: black;" href="#pic2">
+            <div class="features1">
+                <img src="png/512/ios7-bookmarks-outline.png" alt="" class="featu">
+                <h1 style="padding-top:20px;font-family: Arial, Helvetica, sans-serif;font-size: 20px;margin-left: 50px;font-weight: lighter;">App Development</h1>
+                <p style="font-size: 17px;font-family: Arial, Helvetica, sans-serif;font-weight: regular;margin-left: 30px;">It uses a directionary of over 200<br>Latin words, combined with a<br>handful of model sentence</p>
+            </div>
+            </a>
+            <a style="text-decoration: none;color: black;" href="#pic2">
+            <div class="features2">
+                <img src="png/512/ios7-monitor-outline.png" alt="" class="featu">
+                <h1 style="padding-top:20px;font-family: Arial, Helvetica, sans-serif;font-size: 20px;margin-left: 50px;font-weight: lighter;">App Development</h1>
+                <p style="font-size: 17px;font-family: Arial, Helvetica, sans-serif;font-weight: regular;margin-left: 30px;">I throw myself down among the<br>tall grass by the stream as I lie<br> close to the earth </p>
+            </div>
+            </a>
+        </div>
+        <hr id="hr2">
+        <p class="red1">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</p>
+        <h1 class="h11">My Portfolio</h1>
+        <div id="portf">
+            <a style="text-decoration: none;" href="portfo.html">
+            <div class="features">
+                <img class="pic101" src="100.PNG" alt="pico">
+                <p class="red2">DEVELOPMENT</p>
+                <p class="black">The services provide for design</p>
+            </div>
+            </a>
+            <a style="text-decoration: none;" href="portfo.html">
+            <div class="features3">
+                <img class="pic101" src="101.PNG" alt="pico">
+                <p class="red2">APPLICATION</p>
+                <p class="black">Mobile app landing design & app maintain</p>
+            </div>
+            </a>
+            <a style="text-decoration: none;" href="portfo.html">
+            <div class="features4">
+                <img class="pic101" src="102.PNG" alt="pico">
+                <p class="red2">PHOTOSHOP</p>
+                <p class="black">Logo design creativity & application</p>
+            </div>
+            </a>
+            <a style="text-decoration: none;" href="portfo.html">
+            <div class="features5">
+                <img class="pic101" src="103.PNG" alt="pico">
+                <p class="red2">FIGMA</p>
+                <p class="black">Mobile app landing & services</p>
+            </div>
+            </a>
+            <a style="text-decoration: none;" href="portfo.html">
+            <div class="features6">
+                <img class="pic101" src="104.PNG" alt="pico">
+                <p class="red2">WEB DESIGN</p>
+                <p class="black">Design for technology & services</p>
+            </div>
+            </a>
+            <a style="text-decoration: none;" href="portfo.html">
+            <div class="features7">
+                <img class="pic101" src="105.PNG" alt="pico">
+                <p class="red2">WEB DESIGN</p>
+                <p class="black">app for technology & services</p>
+            </div>
+            </a>
+        </div>
+        <hr id="hr3">
+        <p class="red">7+ YEARS OF EXPERIENCE</p>
+        <h1 class="h11">My Resume</h1>
+        <div id="educ">
+            <a href="#educ"><button class="educat">Education</button></a>
+            <a href="#educ"><button class="black1">Interview</button></a>
+            <a href="#educ"><button class="black1">Experience</button></a>
+            <a href="#educ"><button class="black1">Profesional Skills</button></a>
+        </div>
+        <div class="qualify">
+            <p class="red3">2007-2010</p>
+            <h1 id="h111">Education Quality</h1>
+        </div>
+        <div class="qual">
+            <p class="quali">Personal Portfolio April Aprile<br> Fools</p><button class="short" style="
+                color: rgb(247, 63, 176); 
+                font-family:Arial, Helvetica, sans-serif; 
+                border:none;
+                ">4.30/5</button>
+                <p class="ptit">University of DVI (1997 - 2001)</p>
+                <hr>
+                <p class="para">The education should be very interactual. 
+                    Ut<br> tincidunt est ac dolor aliquam sodales.<br> Phasellus 
+                    sed mauris hendrerit, laoreet<br> sem in, lobortis mauris 
+                    hendrerit ante.</p>
+        </div><div class="qual1">
+            <p class="quali0">Diploma in Web<br> Development</p><button class="short" style="
+                color: rgb(247, 63, 176); 
+                font-family:Arial, Helvetica, sans-serif; 
+                border: none;">4.70/5</button>
+                <p class="ptit">BSE In CSE (2004 - 2008)</p>
+                <hr>
+                <p class="para">Contrary to popular belief. Ut tincidunt 
+                    est<br> ac dolor aliquam sodales. Phasellus sed<br> mauris 
+                    hendrerit, laoreet sem in, lobortis<br> mauris hendrerit 
+                    ante.</p>
+        </div>
+        <div class="qual2">
+            <p class="quali">Examples of Personal<br> Portfolio</p><button class="short" style="
+                color: rgb(247, 63, 176); 
+                font-family:Arial, Helvetica, sans-serif; 
+                border: none;">4.50/5</button>
+                <p class="ptit">College of Studies (2000 - 2002)</p>
+                <hr>
+                <p class="para">Maecenas finibus nec sem ut<br> imperdiet. Ut 
+                    tincidunt est ac dolor aliquam sodales.<br> Phasellus sed 
+                    mauris hendrerit, laoreet<br> sem in, lobortis mauris 
+                    hendrerit ante.</p>
+        </div><div class="qual3">
+            <p class="quali0">The Personal Portfolio <br>Mystery</p><button class="short" style="
+                color: rgb(247, 63, 176); 
+                font-family:Arial, Helvetica, sans-serif; 
+                border: none;">4.95/5</button>
+                <p class="ptit">Job at Rainbow-Themes (2008 - 2016)</p>
+                <hr>
+                <p class="para">Generate Lorem Ipsum which looks. Ut<br> 
+                    tincidunt est ac dolor aliquam sodales.<br> Phasellus sed 
+                    mauris hendrerit, laoreet<br> sem in, lobortis mauris 
+                    hendrerit ante.</p>
+        </div>
+        <div class="qual4">
+            <p class="quali">Tips for Personal Portfolio</p><button class="short" style="
+                color: rgb(247, 63, 176); 
+                font-family:Arial, Helvetica, sans-serif; 
+                border: none;">4.80/5</button>
+                <p class="ptit">University of Studies (1997 - 2001)</p>
+                <hr>
+                <p class="para">If you are going to use a passage. Ut<br> 
+                    tincidunt est ac dolor aliquam sodales<br>. Phasellus 
+                    sed mauris hendrerit, laoreet<br> sem in, lobortis 
+                    mauris hendrerit ante.</p>
+        </div><div class="qual5">
+            <p class="quali0">Diploma in Computer<br> Science</p><button class="short" style="
+                color: rgb(247, 63, 176); 
+                font-family:Arial, Helvetica, sans-serif; 
+                border: none;">5.00/5</button>
+                <p class="ptit">Works at Plugin Development (2016 - 2020)</p>
+                <hr>
+                <p class="para">Maecenas finibus nec sem ut<br> imperdiet. 
+                    Ut tincidunt est ac dolor aliquam sodales<br>. 
+                    Phasellus sed mauris hendrerit, laoreet<br> sem in, 
+                    lobortis mauris hendrerit ante.</p>
+        </div>
+        <hr id="hr4">
+        <div class="big">
+            <p id="red3">POPULAR CLIENT</p>
+            <h1 class="h15">Awesome Clients</h1>
+            <div class="vsus">
+                <div class="java">
+                    <a href="#web"><button class="jav" href="#">Javascript</button></a>`
+                    <a href="#web"><button class="jav" href="#">Product Design</button></a>`
+                    <a href="#web"><button class="jav" href="#">Wordpress</button></a>`
+                    <a href="#web"><button class="jav" href="#">HTML to React</button></a>`
+                    <a href="#web"><button class="jav" href="#">React to Laravel</button></a>`
+                    <a href="#web"><button class="jav" href="#">Python</button></a>`
+                </div>
+                <div id="web">
+                    <div class="wierdo">
+                        <img class="jvs" src="java/106.PNG" alt="pic">
+                        <hr class="a101">
+                        <p class="block">John Due</p>
+                    </div><div class="wierdo1">
+                        <img class="jvs" src="java/107.PNG" alt="pic">
+                        <hr class="a101">
+                        <p class="block">Smiths Marth</p>
+                    </div><div class="wierdo2">
+                        <img class="jvs" src="java/108.PNG" alt="pic">
+                        <hr class="a101">
+                        <p class="block">Add dev</p>
+                    </div>
+                    <div class="wierdo3">
+                        <img class="jvs" src="java/109.PNG" alt="pico">
+                        <hr class="a101">
+                        <p class="block">Jone Due</p>
+                    </div><div class="wierdo4">
+                        <img class="jvs" src="java/106.PNG" alt="pico">
+                        <hr class="a101">
+                        <p class="block">Jone Due</p>
+                    </div><div class="wierdo5">
+                        <img class="jvs" src="java/112.PNG" alt="pico">
+                        <hr class="a101">
+                        <p class="block">Adon smith</p>
+                    </div>
+                    <div class="wierdo6">
+                        <img class="jvs" src="java/106.PNG" alt="picos">
+                        <hr class="a101">
+                        <p class="block">Smitha Mila</p>
+                    </div><div class="wierdo7">
+                        <img class="jvs" src="java/107.PNG" alt="picos">
+                        <hr class="a101">
+                        <p class="block">Sultana Mila</p>
+                    </div><div class="wierdo8">
+                        <img class="jvs" src="java/106.PNG" alt="picos">
+                        <hr class="a101">
+                        <p class="block">Jannat</p>
+                    </div>
+                    <div class="wierdo9">
+                        <img class="jvs" src="java/112.PNG" alt="picosx">
+                        <hr class="a101">
+                        <p class="block">Mila Dus</p>
+                    </div><div class="wierdo10">
+                        <img class="jvs" src="java/106.PNG" alt="picosx">
+                        <hr class="a101">
+                        <p class="block">Marth Smiths</p>
+                    </div><div class="wierdo11">
+                        <img class="jvs" src="java/108.PNG" alt="picosx">
+                        <hr class="a101">
+                        <p class="block">Marth Smiths</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr id="froz">
+        <div id="price">
+            <div class="pric">
+                <p style="font-family: Arial, Helvetica, sans-serif; color: rgb(247, 63, 176); margin-top: 70px; margin-left: 70px;">PRICING</p>
+                <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 50px; margin-top: -5px;">My Pricing</h1>
+            </div>
+            <div class="recom">
+                <div class="stat">
+                    <button class="jav2">Static</button><button class="jav2">Standard</button><button class="jav2">Premium</button>
+                </div>
+                <h1 style="font-size: 25px; font-family: Arial, Helvetica, sans-serif;margin-top: 50px; margin-left: 50px;">Make Your Single Page</h1>
+                <p style="font-size: 15px;margin-left: 50px;font-family: Arial, Helvetica, sans-serif;font-weight: lighter;">Elementor</p><button class="num">$30.00</button>
+                <p style="font-size: 20px;font-family: Arial, Helvetica, sans-serif;margin-top: 50px;margin-left: 50px;font-weight: lighter;">All the Lorem Ipsum generators on the Internet<br> tend to repeat predefined chunks as necessary</p>
+                <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 50px;margin-bottom: -35px;"><img src="png/512/checkmark-round.png" alt="" class="good">1 Page with Elementor</p><p style="font-family: Arial, Helvetica, sans-serif;margin-left: 400px;" class="vg"><img src="png/512/checkmark-round.png" alt="" class="good">multipage Elementor</p>
+                <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 50px;margin-bottom: -35px;"><img src="png/512/checkmark-round.png" alt="" class="good">Design Customization</p><p style="font-family: Arial, Helvetica, sans-serif;margin-left: 400px;" class="vg"><img src="png/512/checkmark-round.png" alt="" class="good">Design Figma</p>
+                <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 50px;margin-bottom: -35px;"><img src="png/512/checkmark-round.png" alt="" class="good">Responsive Design</p><p style="font-family: Arial, Helvetica, sans-serif;margin-left: 400px;" class="vg"><img src="png/512/checkmark-round.png" alt="" class="good">MAintaine Design</p>
+                <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 50px;margin-bottom: -35px;"><img src="png/512/checkmark-round.png" alt="" class="good">Content Upload</p><p style="font-family: Arial, Helvetica, sans-serif;margin-left: 400px;" class="vg"><img src="png/512/checkmark-round.png" alt="" class="good">Content Upload</p>
+                <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 50px;margin-bottom: -35px;"><img src="png/512/checkmark-round.png" alt="" class="good">Design Customization</p><p style="font-family: Arial, Helvetica, sans-serif;margin-left: 400px;" class="vg"><img src="png/512/checkmark-round.png" alt="" class="good">Design With XD</p>
+                <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 50px;margin-bottom: -35px;"><img src="png/512/checkmark-round.png" alt="" class="good">2 Plugins/Extensions</p><p style="font-family: Arial, Helvetica, sans-serif;margin-left: 400px;" class="vg"><img src="png/512/checkmark-round.png" alt="" class="good">8 Plugins/Extensions</p>
+                <a href="#pic2"><button class="order">ORDER NOW <img style="width: 20px;height: 20px;margin-bottom: -5px;" src="png/512/arrow-right-c.png" alt=""></button></a>
+                <p style="font-family: Arial, Helvetica, sans-serif;margin-left: 120px;"><img src="png/512/ios7-clock-outline.png" alt="" class="tim">2 Days Delivery <img style="margin-left: 20px;" src="png/512/ios7-pulse.png" alt="" class="tim">Unlimited Revission</p>
+            </div>
+        </div>
+        <hr id="hr6">
+        <p class="red1">VISIT MY BLOG AND KEEP YOUR FEEDBACK</p>
+        <h1 id="he11">My Blog</h1>
+        <div class="features"><a style="text-decoration: none;" href="My blog.html">
+            <img class="pic101" src="tip1.PNG" alt="pict">
+            <p class="red2">CANADA</p>
+            <p class="black">T-shirt design is the part of design </p>
+        </div></a><a style="text-decoration: none;" href="My blog.html"><div class="features3">
+            <img class="pic101" src="tip2.PNG" alt="pict">
+            <p class="red2">DEVELOPMENT</p>
+            <p class="black">The services provide for design </p>
+        </div></a><a style="text-decoration: none;" href="My blog.html"><div class="features4">
+            <img class="pic101" src="tip3.PNG" alt="pict">
+            <p class="red2">APPLICATION</p>
+            <p class="black">Mobile app landing design & app maintain</p>
+        </div></a>
+        <hr id="hr7">
+        <p class="red1">CONTACT </p>
+        <h1 id="withm">Contact With Me</h1>
+        <div class="prof">
+            <img class="proff" src="prof.PNG" alt="prof">
+            <h1 style="margin-left: 20px;margin-top: 20px;font-size: 30px;font-weight: bold;font-family: Arial, Helvetica, sans-serif;">Nevine Acotanza</h1>
+            <p style="margin-left: 20px;margin-top: 20px;font-size: 17px;font-weight: lighter;font-family: Arial, Helvetica, sans-serif;">Chief Operating Officer</p>
+            <p style="margin-left: 20px;margin-top: 35px;font-size: 19px;font-weight: 100;font-family: Arial, Helvetica, sans-serif;">I am available for freelance work. Connect<br> with me via and call in to my account.</p>
+            <div class="pho">
+                <p style="font-size: 19px;font-family: Arial, Helvetica, sans-serif;">Phone: <span class="tel">+01234567890</span></p>
+                <p style="font-size: 19px;font-family: Arial, Helvetica, sans-serif;">Email: <span class="tel">admin@example.com</span></p>
+                <p style="margin-left: 100px;font-family: Arial, Helvetica, sans-serif;font-size: 19px;font-weight: lighter;">FIND WITH ME</p>
+            </div>
+        </div><div class="ident">
+            <form action="kevin.htm" method="post">
+                <label for="name">
+                    <p style="margin-top: 30px;font-family: Arial, Helvetica, sans-serif;font-size: 15px;">YOUR NAME</p>
+                    <input style="width: 200px;height: 50px;border-radius: 5px;border: 1.5px solid rgb(110, 110, 110);" type="text">
+                </label><label for="phone">
+                    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 15px;margin-left: 250px;margin-top: -87px;">PHONE NUMBER</p>
+                    <input style="width: 200px; height:50px;border-radius: 5px;border: 1.5px solid rgb(110, 110, 110);margin-left: 250px;" type="tel" maxlength="10">
+                </label>
+                <label for="email">
+                    <p style="margin-top: 30px;font-family: Arial, Helvetica, sans-serif;font-size: 15px;">EMAIL</p>
+                    <input style="width: 450px;height: 50px;border-radius: 5px;border: 1.5px solid rgb(110, 110, 110);" type="email">
+                </label>
+                <label for="subject">
+                    <p style="margin-top: 30px;font-family: Arial, Helvetica, sans-serif;font-size: 15px;">SUBJECT</p>
+                    <input style="width: 450px;height: 50px;border-radius: 5px;border: 1.5px solid rgb(110, 110, 110);" type="text">
+                </label>
+                <p style="margin-top: 30px;font-family: Arial, Helvetica, sans-serif;font-size: 15px;">YOUR MESSAGE</p>
+                <textarea style="width: 450px;height: 250px;border-radius: 5px;border: 1.5px solid rgb(110, 110, 110);" name="msg" id="message" cols="30" rows="100"></textarea>
+                <button class="last" type="submit">
+                    SEND MESSAGE
+                </button>
+            </form>z
+        </div>
+        <hr style="margin-top: 70px;">
+        <div class="dern">
+            <img style="width: 70px; height: 70px;border-radius: 100%;" src="kevin1.webp" alt="shut it">
+        </div>
+        <a style="text-decoration: none;font-family: Arial, Helvetica, sans-serif;font-weight: bolder;font-size: 30px;margin-top: 30px;margin-left: 440px;color: black;" href="#">IN BIO</a>
+        <p style="margin-left: 350px;margin-top: 20px;font-family: Arial, Helvetica, sans-serif;margin-bottom: 100px;">&copy 2022. All rights reserved by <span class="tel">Rainbow-Themes.</span></p>
+    </div>
+</body>
+</html>

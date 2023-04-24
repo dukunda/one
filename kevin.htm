@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .main{
+      width: 1200px;
+      height: 500px;
+      border: 1px solid red;
+      background: rgb(19, 24, 85);
+    }
+    .d1{
+      width: 400px;
+      height: 500px;
+      border: 1px solid green;
+    }
+    .d2{
+      width: 400px;
+      height: 500px;
+      border: 1px solid green;
+      margin-left: 400px;
+      margin-top: -500px;
+    }
+    .d3{
+      width: 400px;
+      height: 500px;
+      border: 1px solid green;
+      margin-left: 800px;
+      margin-top: -500px;
+    }
+  </style>
+</head>
+<body>
+  <H1>THE HEAD</H1>
+  <p id="grap">watch it</p>
+  <button type="button" onclick="document.getElementById('grap').style.display='none'">click</button>
+  <h1>img</h1>
+  <button type="button" onclick="document.getElementById('myimage').src='png/512/arrow-left-a.png'">left</button>
+  <img id="myimage" src="png/512/arrow-up-a.png" alt="">
+  <button type="button" onclick="document.getElementById('myimage').src='png/512/arrow-right-a.png'">right</button>
+  <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">id</button>
+  <p id="demo"></p>
+  <div class="main">
+    <div class="d1">
+      <h1>head1</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Libero aliquam natus ipsa velit aperiam excepturi aut 
+        dolores delectus laborum! Dolores ex cupiditate suscipit 
+        recusandae quis facilis atque sint libero quasi?</p>
+    </div>
+    <div class="d2">
+      <h1>head2</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Libero aliquam natus ipsa velit aperiam excepturi aut 
+        dolores delectus laborum! Dolores ex cupiditate suscipit 
+        recusandae quis facilis atque sint libero quasi?</p>
+    </div>
+    <div class="d3">
+      <h1>head3</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Libero aliquam natus ipsa velit aperiam excepturi aut 
+        dolores delectus laborum! Dolores ex cupiditate suscipit 
+        recusandae quis facilis atque sint libero quasi?</p>
+    </div>
+  </div>
+</body>
+</html>
